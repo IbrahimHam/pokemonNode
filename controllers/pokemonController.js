@@ -5,8 +5,8 @@ const getPokemon = (req, res) => {
 }
 
 const getPokemonById = async (req, res) => {
-    const id = req.params.id;
-    const pokemon = jsonData.find(pokemon => pokemon.id = id)
+    const id = parseInt(req.params.id);
+    const pokemon = jsonData.find(p => p.id === id);
 
     if (pokemon) {
         return res.json(pokemon);
