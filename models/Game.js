@@ -5,6 +5,8 @@ const gameSchema = new mongoose.Schema({
   pokemon2: String,
   winner: String,
   rounds: Number,
+  pokemon1Image:String,
+  pokemon2Image:String,
   createdAt: {
     type: Date,
     default: Date.now,
